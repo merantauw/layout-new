@@ -6,7 +6,3 @@ import '../styles/common/media.scss';
 
 import '../scripts/modals.js';
 import '../scripts/smooth.js';
-
-
-
-

@@ -77,7 +77,7 @@ module.exports = () => ({
             options: {
               name: '[name].[ext]',
               outputPath: 'assets/fonts/',
-              publicPath: '../fonts/', // Убедитесь, что publicPath указан правильно
+              publicPath: '../fonts/',
             },
           },
         ],
@@ -88,7 +88,7 @@ module.exports = () => ({
     new MiniCssExtractPlugin({
       filename: 'assets/styles/[name].css',
       chunkFilename: 'assets/styles/[id].css',
-      ignoreOrder: false, // Отключение минификации стилей
+      ignoreOrder: false,
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/index.hbs',
