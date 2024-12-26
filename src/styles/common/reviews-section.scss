@@ -1,0 +1,55 @@
+@import "~styles/common/variables.scss";
+
+.reviews{
+  padding: 75px 0;
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__item{
+    background-color: $light-color;
+    border-radius: 35px;
+    padding: 40px;
+    box-shadow: $shadow;
+  }
+  &__item-top{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+  &__item-photo{
+    width: 100px;
+    height: 100px;
+    img{
+      border-radius: 50%;
+    }
+  }
+  &__item-name{
+    font-family: Onest-EB, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  &__item-bought,
+  &__item-text{
+    font-family: Inter-Regular, sans-serif;
+    color: #898989;
+  }
+  &__item-bought{
+    font-size: 16px;
+  }
+  &__item-text{
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+

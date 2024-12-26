@@ -1,0 +1,38 @@
+@import "~styles/common/variables.scss";
+
+.form-section{
+  padding: 75px 0;
+  &__container{
+    padding: 50px 35px;
+    background-color: $blue-color;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+  }
+  &__title{
+    font-family: Onest-Regular, sans-serif;
+    max-width: 90%;
+  }
+  &__right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+form.form{
+  max-width: 600px;
+  input, button{
+    width: 100%;
+  }
+  input{
+    padding: 25px;
+    background-color: $light-color;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    &:focus{
+      border: 1px solid #000000;
+    }
+  }
+}
+

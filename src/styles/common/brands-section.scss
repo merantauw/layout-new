@@ -1,0 +1,46 @@
+@import "~styles/common/variables.scss";
+
+.brands {
+  padding: 75px 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    box-shadow: $shadow;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s all ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: $blue-color;
+      transition: 0.3s all ease;
+    }
+  }
+
+  &__link {
+    padding: 30px 15px;
+    width: 100%;
+    height: 100px;
+  }
+
+  &__link,
+  &__btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 48px;
+    gap: 15px;
+    font-family: Inter-Medium;
+  }
+
+  &__btn {
+    font-size: 36px;
+  }
+}
+

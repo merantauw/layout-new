@@ -1,0 +1,29 @@
+@import "~styles/common/variables.scss";
+.team{
+  padding: 75px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 100px;
+  }
+  &__left,
+  &__right{
+    max-width: 50%;
+    width: 100%;
+  }
+  &__right img{
+    border-radius: 35px;
+  }
+  &__text,
+  &__desc{
+    font-size: 30px;
+    line-height: 140%;
+  }
+  &__text{
+    margin-bottom: 60px;
+  }
+  &__desc{
+    color: $gray-color;
+  }
+}

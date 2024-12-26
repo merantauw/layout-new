@@ -1,0 +1,40 @@
+@import "~styles/common/variables.scss";
+
+.cta{
+  padding: 75px 0px;
+  &__container{
+    position: relative;
+    padding: 0 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3803921569);
+      border-radius: 20px;
+    }
+  }
+  &-inner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 865px;
+    position: relative;
+    z-index: 15;
+    }
+  &__title{
+    font-size: 55px;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 180%;
+    color: $light-color;
+  }
+}

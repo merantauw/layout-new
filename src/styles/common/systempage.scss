@@ -1,0 +1,19 @@
+@import "~styles/common/variables.scss";
+
+.systempage{
+  padding: 0 0 75px;
+  &__wrapper{
+    padding: 35px;
+    background-color: $light-color;
+    border-radius: 35px;
+    box-shadow: $shadow;
+    font-size: 24px;
+    line-height: 140%;
+    ul ul {
+      padding: 15px 0 0 25px;
+    }
+  }
+  &__item{
+    margin-bottom: 15px;
+  }
+}

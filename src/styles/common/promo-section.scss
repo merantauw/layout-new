@@ -1,0 +1,23 @@
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  .content-promo-head {
+    background-color: #00000045;
+    text-align: center;
+    max-width: 86%;
+    color: #fff;
+    margin: 0 auto 30px;
+  }
+}
+

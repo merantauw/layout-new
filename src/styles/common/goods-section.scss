@@ -1,0 +1,78 @@
+@import "~styles/common/variables.scss";
+
+.goods {
+  padding: 75px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__list {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+  }
+  &__item {
+    background-color: #ffffff;
+    border-radius: 35px;
+    padding: 15px 15px 30px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    overflow: hidden;
+    &-img {
+      border-radius: 30px;
+    }
+    &-stats {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      width: 100%;
+      color: $gray-comment;
+      font-family: Inter-Medium, sans-serif;
+      font-size: 15px;
+    }
+    &-state {
+      display: flex;
+      justify-content: space-between;
+
+      .dashed {
+        width: 75%;
+        height: 18px;
+        border-bottom: 1px dashed $gray-comment;
+      }
+    }
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 30px;
+
+      button {
+        padding: 10px 30px;
+      }
+    }
+  }
+  &__btn{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}

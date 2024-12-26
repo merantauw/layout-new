@@ -1,0 +1,29 @@
+@import "~styles/common/variables.scss";
+.advantages{
+  padding: 75px 0;
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  &-list__item{
+    padding: 25px 25px 40px;
+    background-color: $light-color;
+    box-shadow: $shadow;
+  }
+  &-item__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &-item__number{
+    font-size: 96px;
+    font-family: Furore, sans-serif;
+    color: $blue-color;
+  }
+  &-item__bottom{
+    font-size: 48px;
+  }
+}
+

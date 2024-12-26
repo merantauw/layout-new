@@ -1,0 +1,45 @@
+@import "~styles/common/variables.scss";
+
+.stages{
+  padding: 75px 0;
+  &__title{
+    margin-bottom: 0;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  &__item:not(:first-child){
+    padding: 20px;
+    background-color: #eeeeee;
+    box-shadow: $shadow;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    &:hover{
+      background-color: $blue-color;
+      transition: 0.3s all ease;
+    }
+  }
+  &__item-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Onest-EB, sans-serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  &__item-duration{
+    font-family: Onest-Regular, sans-serif;
+    font-size: 32px;
+    width: 50%;
+    text-align: center;
+    color: #8f8f8f;
+    padding: 15px;
+  }
+  &__item-desc{
+    font-family: Onest-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,14 @@
+@import "~styles/common/variables.scss";
+.company{
+  padding: 0 0 50px;
+  &__content{
+    background-color: $light-color;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 30px;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,62 @@
+@import "~styles/common/variables.scss";
+
+.article{
+  padding: 0 0 75px;
+  &__content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 30px;
+    line-height: 140%;
+    position: relative;
+    img{
+      margin-bottom: 25px;
+    }
+  }
+  &__content-body{
+    max-width: 97%;
+    padding-right: 30px;
+    border-right: 1px solid $gray-color;
+    p{
+      margin-bottom: 40px;
+    }
+  }
+  &__tags-list{
+    margin-bottom: 40px;
+  }
+  &__tags-item{
+    font-size: 24px;
+    line-height: 140%;
+  }
+  &__interestings-title{
+    margin-bottom: 40px;
+  }
+  &__interestings-list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__interestings-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 25px 15px;
+    background-color: $light-color;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    transition: 0.3s all ease;
+    &:hover{
+      transform: translateY(-5px);
+      transition: 0.3s all ease;
+    }
+  }
+  &__button{
+    display: block;
+    margin: 30px auto;
+    max-width: 50%;
+    padding: 10px 25px;
+    text-align: center;
+  }
+}
